@@ -5,7 +5,7 @@ btnNode.addEventListener('click', () => {
     let a = document.querySelector('.input1').value;
     let b = document.querySelector('.input2').value;
    
-if ( a >= 100 && a <= 3000 && b >=100 && b <=3000 ) {
+if ( a >= 100 && a <= 30000 && b >=100 && b <=30000 ) {
     fetch(`https://picsum.photos/${a}/${b}`)
       .then((response) => { console.log('response', response.url);
       divNode.innerHTML = `<img src="${response.url}" alt=""><br>
